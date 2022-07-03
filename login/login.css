@@ -47,6 +47,9 @@ p {
     border-bottom: 2px solid #645757;
     font-family: inherit;
 }
+.login__email:focus-within, .login__password:focus-within {
+    border-bottom-color: #246e24;
+}
 
 
 .email::placeholder, .password::placeholder {

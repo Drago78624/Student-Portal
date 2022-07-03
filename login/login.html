@@ -52,24 +52,5 @@
         <input type="submit" value="Login" class="login-btn" />
       </form>
     </div>
-
-    <script>
-      const loginEmail = document.querySelector(".login__email");
-      const loginPassword = document.querySelector(".login__password");
-      const email = document.querySelector(".email");
-      const password = document.querySelector(".password");
-      const inputs = [email, password];
-
-      
-        window.addEventListener("click", ()=>{
-            inputs.forEach((input) => {
-                if(input == document.activeElement){
-                input.parentElement.style.borderBottomColor = "#246e24";
-                }else {
-                    input.parentElement.style.borderBottomColor = "#645757";
-                }
-        })  
-      });
-    </script>
   </body>
 </html>
