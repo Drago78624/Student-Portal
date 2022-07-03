@@ -60,13 +60,15 @@
       const password = document.querySelector(".password");
       const inputs = [email, password];
 
-      inputs.forEach((input) => {
-        input.addEventListener("click", (e) => {
-          inputs.forEach((input) => {
-              input.parentElement.style.borderBottomColor = "#645757";
-          });
-          e.currentTarget.parentElement.style.borderBottomColor = "#246e24";
-        });
+      
+        window.addEventListener("click", ()=>{
+            inputs.forEach((input) => {
+                if(input == document.activeElement){
+                input.parentElement.style.borderBottomColor = "#246e24";
+                }else {
+                    input.parentElement.style.borderBottomColor = "#645757";
+                }
+        })  
       });
     </script>
   </body>
