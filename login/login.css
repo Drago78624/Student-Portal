@@ -1,16 +1,16 @@
 body {
-    background-image: linear-gradient(to bottom right, #ffcc55, #fa6167);
+    background-color: #494949;
 }
 
 .login__container {
-    background-color: white;
+    background-color: #363636;
     padding: 1rem;
     border-radius: 7px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
     transition: transform 200ms, box-shadow 200ms;
     -webkit-transition: transform 200ms, box-shadow 200ms;
     -moz-transition: transform 200ms, box-shadow 200ms;
@@ -24,14 +24,18 @@ body {
     -moz-transform: scale(1.01);
     -ms-transform: scale(1.01);
     -o-transform: scale(1.01);
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
-    text-align: center;
-    color: #ad5558;
-    margin-bottom: 3rem;
+    color: #339c33;
+    margin-bottom: 0.5rem;
     letter-spacing: 1px;
+}
+
+p {
+    margin-bottom: 2.5rem;
+    color: #757575;
 }
 
 .login__email, .login__password {
@@ -39,25 +43,26 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-    padding-bottom: 0.3em;
-    border-bottom: 2px solid lightgray;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #645757;
     font-family: inherit;
 }
+
 
 .email::placeholder, .password::placeholder {
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
-
 }
 
 .email, .password {
     outline: none;
     border: none;
     font-size: 1.1rem;
-    padding-left: 1rem;
+    padding: 0 1rem;
     font-family: inherit;
     letter-spacing: 1px;
-
+    background-color: transparent;
+    color: #b1b1b1;
 }
 
 .login-btn {
@@ -65,7 +70,7 @@ h1 {
     padding: 0.5em;
     font-size: 1.1rem;
     font-weight: bold;
-    background-color: #b1575a;
+    background-color: #339c33;
     border: none;
     color: white;
     font-family: inherit;
@@ -84,11 +89,11 @@ h1 {
 }
 
 .login-btn:hover {
-    background-color: #633132;
+    background-color: #246e24;
 }
 
 @media (min-width: 640px) {
     .login__container {
-        padding: 1rem 2rem;
+        padding: 2rem;
     }
 }
